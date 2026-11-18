@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INEZ — Retention intelligence. Human connection.</title>
+<meta name="description" content="AI for better emails, deeper customer understanding, and an easier path from retention strategy to execution. Coming soon.">
+<meta property="og:title" content="INEZ — Coming soon">
+<meta property="og:description" content="Retention intelligence. Human connection.">
+<meta name="theme-color" content="#0b0b13">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-25 -25 400 400'><rect x='-25' y='-25' width='400' height='400' rx='60' fill='%230b0b13'/><path fill='%23fff' d='M0 0H300L200 100H100V200L0 300Z M350 50V350H50L150 250H250V150Z'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0b0b13;
+    --white: #ffffff;
+    --muted: #9a9aa6;
+    --line: #26262f;
+    --grad: linear-gradient(90deg, #4b35ff 0%, #a21ff0 55%, #e60fca 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { min-height: 100%; }
+  body {
+    background: var(--ink); color: var(--white);
+    font-family: Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: grid; grid-template-columns: 2fr 1fr; min-height: 100vh;
+  }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+  .left { display: flex; flex-direction: column; padding: 44px clamp(24px, 4vw, 58px); min-width: 0; }
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 56px 0; }
+
+  .logo { display: flex; align-items: center; gap: clamp(20px, 3.5vw, 52px); margin-bottom: clamp(36px, 5vw, 60px); }
+  .logo svg { width: clamp(64px, 7vw, 102px); height: auto; flex: none; }
+  .wordmark { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: clamp(88px, 11vw, 160px); line-height: .8; letter-spacing: .02em; }
+
+  .status { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 22px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--grad); box-shadow: 0 0 12px #a21ff0; animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .35; } }
+
+  h1 { font-weight: 400; line-height: 1.02; }
+  h1 .sans { display: block; font-family: Inter, sans-serif; font-weight: 500; font-size: clamp(36px, 4.4vw, 60px); letter-spacing: -.02em; }
+  h1 .serif { display: block; font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-size: clamp(54px, 6.6vw, 92px); letter-spacing: -.01em; margin-top: 6px; }
+
+  .lede { margin-top: 32px; max-width: 34em; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.5; color: #e6e6ec; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  .right { background: var(--grad); display: flex; align-items: center; justify-content: center; padding: 40px; position: relative; overflow: hidden; }
+  .right svg { width: min(70%, 360px); height: auto; }
+  .tag { position: absolute; right: 40px; bottom: 44px; background: var(--ink); color: var(--white); padding: 9px 14px; border-radius: 3px; }
+
+  .left > *, .right svg { opacity: 0; animation: in 1s ease forwards; }
+  .content { animation-delay: .1s; } footer { animation-delay: .25s; } .right svg { animation-delay: .2s; }
+  @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { *, .left > *, .right svg { animation: none !important; opacity: 1 !important; } }
+
+  @media (max-width: 860px) {
+    body { grid-template-columns: 1fr; grid-template-rows: auto 220px; }
+    .left { padding: 28px 20px; }
+    .content { padding: 48px 0 40px; }
+    .right svg { width: 150px; }
+    .tag { right: 20px; bottom: 20px; }
+  }
+</style>
+</head>
+<body>
+  <section class="left">
+    <div class="mono">INEZ / AI retention marketing</div>
+
+    <div class="content">
+      <div class="logo" aria-label="INEZ">
+        <svg viewBox="0 0 350 350" aria-hidden="true"><path fill="#fff" d="M0 0H300L200 100H100V200L0 300Z M350 50V350H50L150 250H250V150Z"/></svg>
+        <span class="wordmark">INEZ</span>
+      </div>
+
+      <div class="status mono"><span class="dot"></span>Coming soon</div>
+
+      <h1>
+        <span class="sans">Retention intelligence.</span>
+        <span class="serif">Human connection.</span>
+      </h1>
+
+      <p class="lede">AI for better emails, deeper customer understanding, and an easier path from retention strategy to execution.</p>
+    </div>
+
+    <footer class="mono">
+      <span>Intelligence for lasting connections</span>
+      <span>&copy; 2026 INEZ</span>
+    </footer>
+  </section>
+
+  <aside class="right" aria-hidden="true">
+    <svg viewBox="0 0 350 350"><path fill="#fff" d="M0 0H300L200 100H100V200L0 300Z M350 50V350H50L150 250H250V150Z"/></svg>
+    <span class="tag mono">getinez.ai</span>
+  </aside>
+</body>
+</html>
